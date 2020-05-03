@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flash_chat/widget/round_button.dart';
 import 'package:flutter/material.dart';
 
@@ -10,8 +11,11 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
+  final _auth = FirebaseAuth.instance;
+
   @override
   Widget build(BuildContext context) {
+    String
     return Scaffold(
       backgroundColor: Colors.white,
       body: Padding(
